@@ -1,4 +1,8 @@
 @media screen and (max-width:800px) {
+    /* body style  */
+body{
+    overflow-x: hidden;
+}
 .title{
     width: 80%;
     display: flex;
@@ -95,7 +99,7 @@ nav{
     justify-content: center;
     align-items: center;
 }
-.animation-circle{
+.animation-circle,.animation-circle2{
     width: 400px;
     height: 400px;
 }
@@ -225,6 +229,7 @@ nav{
     max-height: fit-content;
     padding: 2%;
     gap: 5px;
+    overflow-x:hidden ;
 }
 .services h1{
     width: 35%;
