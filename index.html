@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Redirect based on Language</title>
+        <script>
+            // Detect browser language
+            const userLang = navigator.language || navigator.userLanguage; 
+            // userLang can be: "en", "en-US", "ar", "ar-EG", etc.
+
+            // Decide which page to redirect
+            if (userLang.startsWith('ar')) {
+            // Arabic
+            window.location.href = "/html/ar/indexAR.html";
+            } else {
+            // Default to English
+            window.location.href = "/html/en/indexEN.html";
+            }
+        </script>
+    </head>
+<body>
+  <p>Redirecting based on your browser language...</p>
+
+</body>
+</html>
